@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>ITS</display-name>
+  
+  <welcome-file-list>
+    <welcome-file>Login.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <description></description>
+    <display-name>SignUp</display-name>
+    <servlet-name>SignUpController</servlet-name>
+    <servlet-class>com.Controller.SignUpController</servlet-class>
+   </servlet>
+   <servlet-mapping>
+    <servlet-name>SignUpController</servlet-name>
+    <url-pattern>/SignUpController</url-pattern>
+   </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>Login</display-name>
+    <servlet-name>LoginController</servlet-name>
+    <servlet-class>com.Controller.LoginController</servlet-class>
+   </servlet>
+   <servlet-mapping>
+    <servlet-name>LoginController</servlet-name>
+    <url-pattern>/LoginController</url-pattern>
+   </servlet-mapping>
+  
+   	<servlet>
+    <description></description>
+    <display-name>EducationalDetails</display-name>
+    <servlet-name>EducationalDetailsController</servlet-name>
+    <servlet-class>com.Controller.EducationalDetailsController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EducationalDetailsController</servlet-name>
+    <url-pattern>/EducationalDetailsController</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <description></description>
+    <display-name>Agency</display-name>
+    <servlet-name>AgencyController</servlet-name>
+    <servlet-class>com.Controller.AgencyController</servlet-class>
+   </servlet>
+   <servlet-mapping>
+    <servlet-name>AgencyController</servlet-name>
+    <url-pattern>/AgencyController</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+    <description></description>
+    <display-name>RegistrationForm</display-name>
+    <servlet-name>RegistrationFormController</servlet-name>
+    <servlet-class>com.Controller.RegistrationFormController</servlet-class>
+   </servlet>
+   <servlet-mapping>
+    <servlet-name>RegistrationFormController</servlet-name>
+    <url-pattern>/RegistrationFormController</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+    <description></description>
+    <display-name>Experience</display-name>
+    <servlet-name>ExperienceController</servlet-name>
+    <servlet-class>com.Controller.ExperienceController</servlet-class>
+   </servlet>
+   <servlet-mapping>
+    <servlet-name>ExperienceController</servlet-name>
+    <url-pattern>/ExperienceController</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+    <description></description>
+    <display-name>JobApplication</display-name>
+    <servlet-name>JobApplicationController</servlet-name>
+    <servlet-class>com.Controller.JobApplicationController</servlet-class>
+   </servlet>
+   <servlet-mapping>
+    <servlet-name>JobApplicationController</servlet-name>
+    <url-pattern>/JobApplicationController</url-pattern>
+   </servlet-mapping>
+  
+   <servlet>  
+    <description></description>  
+    <display-name>Logout</display-name>  
+    <servlet-name>LogoutServlet</servlet-name>  
+    <servlet-class>com.Controller.LogoutServlet</servlet-class>  
+  </servlet>  
+  <servlet-mapping>  
+    <servlet-name>LogoutServlet</servlet-name>  
+    <url-pattern>/LogoutServlet</url-pattern>  
+  </servlet-mapping>
+ 
+ <context-param> 
+    <description>Location to store uploaded file</description> 
+    <param-name>file-upload</param-name> 
+    <param-value>
+        c:\apache-tomcat-5.5.29\webapps\data\
+     </param-value> 
+</context-param>
+ 
+ <servlet>
+   <description></description>
+   <display-name>Upload</display-name>  
+   <servlet-name>UploadServlet</servlet-name>
+   <servlet-class>com.Controller.UploadServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>UploadServlet</servlet-name>
+   <url-pattern>/UploadServlet</url-pattern>
+</servlet-mapping>
+ 
+<servlet>
+    <description></description>
+    <display-name>State</display-name>
+    <servlet-name>StateController</servlet-name>
+    <servlet-class>com.Controller.StateController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StateController</servlet-name>
+    <url-pattern>/StateController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>City</display-name>
+    <servlet-name>CityController</servlet-name>
+    <servlet-class>com.Controller.CityController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CityController</servlet-name>
+    <url-pattern>/CityController</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+    <description></description>
+    <display-name>JobOpenings</display-name>
+    <servlet-name>JobOpeningsController</servlet-name>
+    <servlet-class>com.Controller.JobOpeningsController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JobOpeningsController</servlet-name>
+    <url-pattern>/JobOpeningsController</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ForgetPassword</display-name>
+    <servlet-name>ForgetPasswordController</servlet-name>
+    <servlet-class>com.Controller.ForgetPasswordController</servlet-class>
+   </servlet>
+   <servlet-mapping>
+    <servlet-name>ForgetPasswordController</servlet-name>
+    <url-pattern>/ForgetPasswordController</url-pattern>
+   </servlet-mapping>
+	
+	<servlet>
+    <description></description>
+    <display-name>AccountActivation</display-name>
+    <servlet-name>AccountActivationController</servlet-name>
+    <servlet-class>com.Controller.AccountActivationController</servlet-class>
+   </servlet>
+   <servlet-mapping>
+    <servlet-name>AccountActivationController</servlet-name>
+    <url-pattern>/AccountActivationController</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+    <description></description>
+    <display-name>ResetPassword</display-name>
+    <servlet-name>ResetPasswordController</servlet-name>
+    <servlet-class>com.Controller.ResetPasswordController</servlet-class>
+   </servlet>
+   <servlet-mapping>
+    <servlet-name>ResetPasswordController</servlet-name>
+    <url-pattern>/ResetPasswordController</url-pattern>
+   </servlet-mapping>
+</web-app>

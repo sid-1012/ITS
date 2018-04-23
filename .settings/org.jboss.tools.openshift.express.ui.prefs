@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+org.jboss.tools.openshift.ApplicationId=573dc2b62d5271b47300029d
+org.jboss.tools.openshift.ApplicationName=client
+org.jboss.tools.openshift.Connection=https\://team.its46326%40gmail.com@openshift.redhat.com
+org.jboss.tools.openshift.DeployFolder=webapps
+org.jboss.tools.openshift.Domain=interviewtrack
+org.jboss.tools.openshift.RemoteName=openshift
